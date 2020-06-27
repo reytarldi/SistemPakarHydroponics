@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DummyInput"
+    android:background="@drawable/bg_sign_up">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/bg_basic_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pH"
+            android:textSize="15dp"
+            android:fontFamily="@font/mregular"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/in_ph"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:textColor="#FFF"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EC"
+            android:textSize="15dp"
+            android:fontFamily="@font/mregular"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/in_ec"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:textColor="#FFF"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suhu"
+            android:textSize="15dp"
+            android:fontFamily="@font/mregular"/>
+
+        <EditText
+            android:id="@+id/in_suhu"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:textColor="#FFF"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cahaya"
+            android:textSize="15dp"
+            android:fontFamily="@font/mregular"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/in_cahaya"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:textColor="#FFF"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/sub_mit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_condition"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="75dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

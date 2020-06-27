@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/bg_sign_up">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_view_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_nopic"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mmedium"
+        android:text="mrdhan"
+        android:textColor="#FFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_basic_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/in_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:fontFamily="@font/mregular" 
+                android:textStyle="bold"
+                />
+            
+            <ImageView
+                android:id="@+id/dummy"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/white"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="248dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_line"/>
+        
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:id="@+id/pilih_tanaman"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_pilih_tanaman"/>
+
+            <ImageView
+                android:id="@+id/cek_tanaman"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_cek_tanaman"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/setting_antares"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_setting_antares"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih\nTanaman"
+                android:textAlignment="center"
+                android:fontFamily="@font/mregular"
+                />
+
+            <TextView
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cek\nTanaman"
+                android:textAlignment="center"
+                android:fontFamily="@font/mregular"
+                />
+
+            <TextView
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting\nAntares"
+                android:textAlignment="center"
+                android:fontFamily="@font/mregular"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

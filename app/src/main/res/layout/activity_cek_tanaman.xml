@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekTanaman"
+    android:background="@drawable/bg_sign_up">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_view_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_nopic"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mmedium"
+        android:text="mrdhan"
+        android:textColor="#FFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/bg_basic_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:text="Kondisi Tanaman"
+            android:layout_marginLeft="65dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_condition"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pH"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textColor="#000"
+                        android:fontFamily="@font/mmedium"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_marginLeft="55dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pH"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/mregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_condition"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EC"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="220"
+                        android:textColor="#000"
+                        android:fontFamily="@font/mmedium"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ppm"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/mregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_condition"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suhu"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28"
+                        android:textColor="#000"
+                        android:fontFamily="@font/mmedium"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_marginLeft="55dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="°C"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/mregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_condition"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cahaya"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/lux"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="#000"
+                        android:fontFamily="@font/mmedium"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lx"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/mregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
